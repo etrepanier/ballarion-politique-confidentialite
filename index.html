@@ -1,18 +1,281 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Politique de confidentialité & Conditions d’utilisation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[Nom du Jeu] — Politique de confidentialité & Conditions d’utilisation / Privacy Policy & Terms</title>
   <style>
-    body { max-width: 800px; margin: 40px auto; font-family: Arial, sans-serif; line-height: 1.6; }
-    h1, h2 { color: #2a4d8f; }
+    :root { --accent:#2a4d8f; --text:#1b1b1b; --muted:#6b7280; --bg:#ffffff; --card:#f8fafc; }
+    html,body{margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--text);background:var(--bg);line-height:1.7}
+    .container{max-width:900px;margin:0 auto;padding:32px 20px 64px}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #e5e7eb}
+    .topbar{max-width:900px;margin:0 auto;padding:12px 20px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+    .brand{font-weight:700;color:var(--accent)}
+    nav a{color:var(--accent);text-decoration:none;font-weight:600;margin-left:16px}
+    nav a:hover{text-decoration:underline}
+    .lang{display:flex;gap:8px;align-items:center}
+    .lang button{border:1px solid #d1d5db;background:#fff;padding:6px 10px;border-radius:999px;cursor:pointer;font-weight:700}
+    .lang button.active{background:#eef2ff;border-color:#c7d2fe;color:#1e3a8a}
+    h1,h2{color:var(--accent);line-height:1.25}
+    h1{font-size:clamp(1.6rem,2.4vw + 1rem,2.2rem);margin:24px 0 8px}
+    h2{font-size:clamp(1.25rem,1.4vw + .8rem,1.6rem);margin:24px 0 8px}
+    p,li{font-size:1rem}
+    .meta{color:var(--muted);font-size:.95rem;margin-bottom:16px}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:12px;padding:20px}
+    .toc{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0 24px}
+    .toc a{background:#eef2ff;border:1px solid #dbeafe;padding:8px 12px;border-radius:999px;text-decoration:none;color:#1e3a8a;font-weight:600}
+    .toc a:hover{background:#dbeafe}
+    ul{padding-left:20px}
+    footer{margin-top:48px;color:var(--muted);font-size:.95rem}
+    .small{font-size:.95rem}
+    code.placeholder{background:#fff7ed;border:1px dashed #fdba74;padding:2px 6px;border-radius:6px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+    /* language visibility */
+    [data-lang]{display:none}
+    [data-lang].show{display:block}
   </style>
 </head>
 <body>
-  <h1>Politique de confidentialité</h1>
-  <p>[Ton texte ici...]</p>
+  <header>
+    <div class="topbar">
+      <div class="brand">Ballarion</div>
+      <nav>
+        <a href="#privacy">Politique / Privacy</a>
+        <a href="#terms">Conditions / Terms</a>
+      </nav>
+      <div class="lang" aria-label="Sélecteur de langue / Language selector">
+        <button type="button" data-switch="fr" class="active">FR</button>
+        <button type="button" data-switch="en">EN</button>
+      </div>
+    </div>
+  </header>
 
-  <h1>Conditions d’utilisation</h1>
-  <p>[Ton texte ici...]</p>
+  <main class="container">
+    <section class="card" data-lang="fr">
+      <h1>Documents légaux</h1>
+      <p class="meta">Dernière mise à jour : 15 septembre 2025</p>
+      <div class="toc">
+        <a href="#privacy">Aller à la Politique de confidentialité</a>
+        <a href="#terms">Aller aux Conditions d’utilisation</a>
+      </div>
+    </section>
+
+    <section class="card" data-lang="en">
+      <h1>Legal Documents</h1>
+      <p class="meta">Last updated: September 15th 2025</p>
+      <div class="toc">
+        <a href="#privacy">Go to Privacy Policy</a>
+        <a href="#terms">Go to Terms of Use</a>
+      </div>
+    </section>
+
+    <!-- PRIVACY / POLITIQUE -->
+    <section id="privacy" data-lang="fr">
+      <h1>Politique de confidentialité</h1>
+      <p class="meta">Dernière mise à jour : 15 septembre 2025</p>
+      <p>Cette Politique de confidentialité décrit comment Etienne Trepanier (ci‑après « l’Éditeur ») collecte, utilise et protège les données des utilisateurs dans l’application Ballarion (ci‑après « le Jeu »).</p>
+      <h2>1. Données collectées</h2>
+      <p>Le Jeu en lui‑même ne collecte pas de données personnelles identifiables. Cependant, par l’utilisation de services tiers tels que Google AdMob, les informations suivantes peuvent être collectées automatiquement :</p>
+      <ul>
+        <li>Identifiants publicitaires de l’appareil (ex. : IDFA sur iOS, AAID sur Android) ;</li>
+        <li>Données d’utilisation du Jeu (pages vues, durée de session, interactions avec les publicités) ;</li>
+        <li>Informations techniques (modèle d’appareil, version du système, langue, pays).</li>
+      </ul>
+      <h2>2. Utilisation des données</h2>
+      <ul>
+        <li>afficher des publicités personnalisées ou non personnalisées ;</li>
+        <li>mesurer l’efficacité des publicités ;</li>
+        <li>améliorer l’expérience utilisateur.</li>
+      </ul>
+      <h2>3. Partage des données</h2>
+      <p>Les données collectées par AdMob sont transmises à Google et à ses partenaires publicitaires pour la diffusion d’annonces. L’Éditeur n’accède pas directement à ces données personnelles et ne les partage avec aucun tiers autre que les services nécessaires au fonctionnement du Jeu.</p>
+      <h2>4. Consentement</h2>
+      <p>Dans certaines régions (notamment l’Union européenne, le Royaume‑Uni et la Suisse), une fenêtre de consentement peut apparaître au premier lancement du Jeu afin de vous permettre d’accepter ou de refuser les publicités personnalisées, conformément à la réglementation locale (RGPD, ePrivacy, etc.). En dehors de ces régions, Google peut diffuser des publicités sans afficher de fenêtre de consentement.</p>
+      <h2>5. Protection des données</h2>
+      <p>Aucune donnée sensible (nom, adresse, email, mot de passe, etc.) n’est collectée par l’Éditeur. Les données techniques gérées par Google AdMob sont protégées conformément à la Politique de confidentialité de Google.</p>
+      <h2>6. Services tiers</h2>
+      <p>Le Jeu utilise Google AdMob pour l’affichage des publicités. Vous pouvez consulter la politique de confidentialité de Google : <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+      <h2>7. Droits des utilisateurs</h2>
+      <p>Vous disposez de droits légaux (accès, rectification, suppression, opposition) concernant vos données personnelles.</p>
+      <p>L’Éditeur ne collecte ni ne stocke directement de données personnelles.</p>
+      <p>Les seules données collectées proviennent de services tiers (ex. Google AdMob).</p>
+      <p>Pour exercer vos droits concernant ces données, vous pouvez consulter la politique de confidentialité de Google et suivre leurs instructions :
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
+      <p>Si vous avez des questions, vous pouvez également nous contacter à l’adresse indiquée ci-dessous.</p>
+      <h2>8. Modifications</h2>
+      <p>Cette Politique peut être mise à jour à tout moment. Les nouvelles versions seront publiées dans le Jeu ou sur <a href="https://etrepanier.github.io/ballarion-politique-confidentialite" target="_blank" rel="noopener">https://etrepanier.github.io/ballarion-politique-confidentialite</a></p>
+      <h2>9. Contact</h2>
+      <p>Questions: eti.appsgames@gmail.com</p>
+    </section>
+
+    <section id="privacy" data-lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: Septembre 15th 2025</p>
+      <p>This Privacy Policy explains how Etienne Trepanier (the “Publisher”) collects, uses, and protects user data in the Ballarion app (the “Game”).</p>
+      <h2>1. Data collected</h2>
+      <p>The Game itself does not collect personally identifiable information. However, through third‑party services such as Google AdMob, the following information may be collected automatically:</p>
+      <ul>
+        <li>Advertising identifiers of the device (e.g., IDFA on iOS, AAID on Android);</li>
+        <li>Game usage data (pages viewed, session duration, ad interactions);</li>
+        <li>Technical information (device model, OS version, language, country).</li>
+      </ul>
+      <h2>2. Use of data</h2>
+      <ul>
+        <li>to display personalized or non‑personalized ads;</li>
+        <li>to measure ad effectiveness;</li>
+        <li>to improve user experience.</li>
+      </ul>
+      <h2>3. Data sharing</h2>
+      <p>Data collected via AdMob is shared with Google and its advertising partners for ad delivery. The Publisher does not directly access this personal data and does not share it with any third parties other than services required for the Game to function.</p>
+      <h2>4. Consent</h2>
+      <p>In certain regions (notably the European Union, the United Kingdom, and Switzerland), a consent prompt may appear on first launch to let you accept or refuse personalized ads in line with local regulations (GDPR, ePrivacy, etc.). Outside these regions, Google may serve ads without showing a consent prompt.</p>
+      <h2>5. Data security</h2>
+      <p>No sensitive data (name, address, email, password, etc.) is collected by the Publisher. Technical data handled by Google AdMob is protected in accordance with Google’s Privacy Policy.</p>
+      <h2>6. Third‑party services</h2>
+      <p>The Game uses Google AdMob for advertising. See Google’s privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+      <h2>7. Your rights</h2>
+      <p>You have certain legal rights (access, rectification, deletion, objection) regarding your personal data.</p>
+      <p>The Publisher does not directly collect or store any personal data.</p>
+      <p>The only data collected comes from third-party services (e.g., Google AdMob).</p>
+      <p>To exercise your rights regarding this data, please consult Google’s Privacy Policy and follow their instructions:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
+      <p>If you have any questions, you may also contact us at the support email address provided below.</p>
+      <h2>8. Changes</h2>
+      <p>This Policy may be updated at any time. New versions will be published in the Game or on <a href="https://etrepanier.github.io/ballarion-politique-confidentialite" target="_blank" rel="noopener">https://etrepanier.github.io/ballarion-politique-confidentialite</a></p>
+      <h2>9. Contact</h2>
+      <p>Questions: eti.appsgames@gmail.com</p>
+    </section>
+
+    <hr style="margin:40px 0;border:none;border-top:1px solid #e5e7eb" />
+
+    <!-- TERMS / CONDITIONS -->
+    <section id="terms" data-lang="fr">
+      <h1>Conditions d’utilisation</h1>
+      <p class="meta">Dernière mise à jour : 15 septembre 2025</p>
+      <p>Bienvenue dans Ballarion (ci‑après « le Jeu »), édité par Etienne Trepanier (ci‑après « l’Éditeur »). En téléchargeant ou en utilisant le Jeu, vous acceptez pleinement les présentes Conditions d’utilisation.</p>
+      <h2>1. Utilisation du Jeu</h2>
+      <ul>
+        <li>Usage personnel et non commercial.</li>
+        <li>Interdiction de modifier, distribuer, copier ou exploiter le Jeu sans autorisation.</li>
+        <li>Présence possible d’éléments protégés par droit d’auteur.</li>
+      </ul>
+      <h2>2. Public visé</h2>
+      <p>Le Jeu est destiné aux utilisateurs âgés de 13 ans et plus. Les enfants en dessous de cet âge doivent l’utiliser sous la supervision d’un parent ou tuteur légal.</p>
+      <h2>3. Publicités et achats intégrés</h2>
+      <ul>
+        <li>Affichage de publicités.</li>
+        <li>Achats intégrés possibles (ex. : suppression des pubs, contenus additionnels).</li>
+        <li>Achats gérés exclusivement par Apple via l’App Store.</li>
+        <li>L’Éditeur ne traite pas vos informations de paiement.</li>
+      </ul>
+      <h2>4. Propriété intellectuelle</h2>
+      <p>Tous les éléments du Jeu (textes, images, graphismes, musiques, sons, codes, marques, logos) sont protégés par la législation applicable et demeurent la propriété de l’Éditeur ou de ses partenaires. Toute utilisation non autorisée est interdite.</p>
+      <h2>5. Restrictions d’utilisation</h2>
+      <ul>
+        <li>utilisation illégale, abusive ou contraire aux présentes ;</li>
+        <li>triche, modification du code, exploitation de failles ;</li>
+        <li>diffusion de contenus inappropriés, offensants ou illégaux via le Jeu.</li>
+      </ul>
+      <h2>6. Limitation de responsabilité</h2>
+      <p>Le Jeu est fourni « tel quel », sans aucune garantie de disponibilité, de fiabilité ou d’absence d’erreurs.</p>
+      <p>L’Éditeur ne saurait être tenu responsable de pertes de données, de progression de jeu, d’interruptions de service, de dysfonctionnements techniques ou de tout dommage direct ou indirect résultant de l’utilisation du Jeu.</p><p>Le Jeu peut faire l’objet de mises à jour automatiques ou manuelles (correctifs, améliorations, nouveaux contenus). Certaines mises à jour peuvent être nécessaires pour continuer à utiliser le Jeu. En utilisant le Jeu, vous acceptez la réception de ces mises à jour.</p>
+      <p>Dans la mesure permise par la loi, l’Éditeur décline toute responsabilité pour tout préjudice matériel, financier ou immatériel lié à l’utilisation du Jeu.</p>
+      <h2>7. Protection des données</h2>
+      <p>Le Jeu respecte la vie privée des utilisateurs. Pour plus de détails, consultez la Politique de confidentialité : <a href="https://etrepanier.github.io/ballarion-politique-confidentialite" target="_blank" rel="noopener">https://etrepanier.github.io/ballarion-politique-confidentialite</a></p>
+      <h2>8. Résiliation</h2>
+      <p>L’Éditeur peut suspendre ou mettre fin à l’accès au Jeu en cas de non‑respect des présentes.</p>
+      <h2>9. Modifications</h2>
+      <p>Les Conditions peuvent évoluer. Les nouvelles versions seront publiées dans le Jeu ou sur <a href="https://etrepanier.github.io/ballarion-politique-confidentialite" target="_blank" rel="noopener">https://etrepanier.github.io/ballarion-politique-confidentialite</a></p>
+      <h2>10. Droit applicable</h2>
+      <p>Les présentes Conditions sont régies par le droit du Canada et du Québec. Tout litige sera de la compétence exclusive des tribunaux de Montréal, Québec.</p>
+      <h2>11. Statut de l’Éditeur</h2>
+      <p>L’Éditeur agit en tant que particulier (non-trader) au sens de la réglementation européenne.
+      Le Jeu est publié à titre personnel et de loisir.
+      La présence de publicités via Google AdMob peut générer des revenus accessoires,
+      mais ceux-ci ne confèrent pas à l’Éditeur un statut commercial ou professionnel.</p>
+      <h2>11. Contact</h2>
+      <p>Contact : eti.appsgames@gmail.com</p>
+    </section>
+
+    <section id="terms" data-lang="en">
+      <h1>Terms of Use</h1>
+      <p class="meta">Last updated: September 15th 2025</p>
+      <p>Welcome to Ballarion (the “Game”), published by Etienne Trepanier (the “Publisher”). By downloading or using the Game, you fully agree to these Terms of Use.</p>
+      <h2>1. Use of the Game</h2>
+      <ul>
+        <li>Personal, non‑commercial use only.</li>
+        <li>Do not modify, distribute, copy, or exploit the Game without authorization.</li>
+        <li>The Game may include materials protected by copyright.</li>
+      </ul>
+      <h2>2. Target audience</h2>
+      <p>The Game is intended for users aged 13 and over. Children below this age should use the Game under the supervision of a parent or legal guardian.</p>
+      <h2>3. Ads and In‑App Purchases</h2>
+      <ul>
+        <li>The Game may display ads.</li>
+        <li>The Game may offer in‑app purchases (e.g., remove ads, additional content).</li>
+        <li>All purchases are handled exclusively by Apple via the App Store.</li>
+        <li>The Publisher does not process your payment information.</li>
+      </ul>
+      <h2>4. Intellectual property</h2>
+      <p>All elements of the Game (texts, images, graphics, music, sounds, code, trademarks, logos) are protected by applicable intellectual property laws and remain the exclusive property of the Publisher or its partners. Any unauthorized use is strictly prohibited.</p>
+      <h2>5. Usage restrictions</h2>
+      <ul>
+        <li>illegal, abusive, or otherwise non‑compliant use;</li>
+        <li>cheating, code modification, exploitation of bugs;</li>
+        <li>sharing inappropriate, offensive, or illegal content via the Game.</li>
+      </ul>
+      <h2>6. Limitation of liability</h2>
+      <p>The Game is provided “as is,” without any guarantees of availability, reliability, or error-free operation.</p>
+      <p>The Publisher cannot be held liable for data loss, game progress loss, service interruptions, technical malfunctions, or any direct or indirect damages resulting from the use of the Game.</p><p>The Game may receive automatic or manual updates (bug fixes, improvements, new content). Some updates may be required to continue using the Game. By using the Game, you agree to receive such updates.</p>
+      <p>To the extent permitted by law, the Publisher disclaims all liability for any material, financial, or non-material harm arising from the use of the Game.</p>
+      <h2>7. Data protection</h2>
+      <p>The Game respects user privacy. For more details, see our Privacy Policy at: <a href="https://etrepanier.github.io/ballarion-politique-confidentialite" target="_blank" rel="noopener">https://etrepanier.github.io/ballarion-politique-confidentialite</a></p>
+      <h2>8. Termination</h2>
+      <p>The Publisher may suspend or terminate access to the Game in case of breach of these Terms.</p>
+      <h2>9. Changes</h2>
+      <p>The Terms may change at any time. New versions will be published in the Game or on <a href="https://etrepanier.github.io/ballarion-politique-confidentialite" target="_blank" rel="noopener">https://etrepanier.github.io/ballarion-politique-confidentialite</a></p>
+      <h2>10. Governing law</h2>
+      <p>These Terms are governed by the laws of Canada and the Province of Quebec. Any dispute shall be subject to the exclusive jurisdiction of the courts in Montreal, Quebec.</p>
+      <h2>11. Publisher Status</h2>
+      <p>The Publisher acts as an individual (non-trader) under European regulations.
+      The Game is published for personal and entertainment purposes.
+      The presence of advertisements via Google AdMob may generate incidental revenue,
+      but this does not grant the Publisher a commercial or professional status.</p>
+      <h2>11. Contact</h2>
+      <p>Contact: eti.appsgames@gmail.com</p>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Etienne Trepanier. Tous droits réservés / All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('[data-switch]');
+    const sections = document.querySelectorAll('[data-lang]');
+
+    function setLang(lang){
+      sections.forEach(s=>{ s.classList.toggle('show', s.getAttribute('data-lang')===lang); });
+      buttons.forEach(b=>{ b.classList.toggle('active', b.getAttribute('data-switch')===lang); });
+      document.documentElement.lang = lang;
+      try { localStorage.setItem('lang', lang); } catch(e){}
+      // update hash param for shareable links
+      const url = new URL(window.location);
+      url.searchParams.set('lang', lang);
+      history.replaceState({}, '', url);
+    }
+
+    buttons.forEach(b=> b.addEventListener('click', ()=> setLang(b.getAttribute('data-switch'))));
+
+    // init: from ?lang=, localStorage, or browser language
+    const paramsLang = new URLSearchParams(window.location.search).get('lang');
+    const saved = (()=>{try{return localStorage.getItem('lang')}catch(e){return null}})();
+    const browser = (navigator.language||'fr').slice(0,2);
+    const initial = (paramsLang||saved||browser).toLowerCase().startsWith('en') ? 'en' : 'fr';
+    setLang(initial);
+
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
